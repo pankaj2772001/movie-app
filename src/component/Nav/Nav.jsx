@@ -1,6 +1,6 @@
 import { useContext, useState } from "react"
 import { NavLink, useNavigate } from "react-router-dom"
-import MovieProvider from "../../context/movieProvider"
+import MovieProvider from "../../context/MovieProvider"
 import './Nav.css'
 
 const Nav = () => {
