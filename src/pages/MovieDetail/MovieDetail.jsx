@@ -1,6 +1,6 @@
 import { useContext, useEffect } from "react"
 import { useParams } from "react-router-dom"
-import MovieProvider from "../../context/movieProvider"
+import MovieProvider from "../../context/MovieProvider"
 import './MovieDetail.css'
 
 const MovieDetail = () => {

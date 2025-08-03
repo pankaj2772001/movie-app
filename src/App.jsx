@@ -1,4 +1,4 @@
-import MovieProvider from "./context/movieProvider";
+
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Nav from "./component/Nav/Nav";
@@ -9,6 +9,7 @@ import Search from "./pages/Search/Search";
 import MovieDetail from "./pages/MovieDetail/MovieDetail";
 import { useLocation } from "react-router-dom";
 import './App.css';
+import MovieProvider from "./context/MovieProvider";
 
 const MovieContent = () => {
   const [movies, setMovies] = useState(null);

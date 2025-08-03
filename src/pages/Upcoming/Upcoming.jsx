@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import MovieProvider from "../../context/movieProvider"
+import MovieProvider from "../../context/MovieProvider"
 import { Link } from "react-router-dom"
 import './Upcoming.css'
 
