@@ -1,0 +1,140 @@
+.movie-detail {
+  font-family: sans-serif;
+  background-color: #1e1b4b;
+  color: #f3f0ff;
+}
+
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 40px 20px;
+}
+
+.banner-overlay {
+  background-color: rgba(30, 27, 75, 0.85);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.left .poster {
+  width: 180px;
+  border-radius: 4px;
+}
+
+.right {
+  flex: 1;
+  min-width: 240px;
+}
+
+.right h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #a78bfa;
+}
+
+.rating {
+  color: #facc15;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.right h3 {
+  margin-top: 16px;
+  color: #a78bfa;
+  font-size: 18px;
+}
+
+.cast-section {
+  padding: 20px;
+}
+
+.cast-section h3 {
+  font-size: 20px;
+  margin-bottom: 16px;
+  color: #a78bfa;
+}
+
+.cast-list {
+  display: flex;
+  overflow-x: auto;
+  gap: 16px;
+}
+
+.cast-card {
+  min-width: 120px;
+  background-color: #312e81;
+  border-radius: 6px;
+  padding: 8px;
+  text-align: center;
+}
+
+.cast-card img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.cast-name {
+  font-size: 14px;
+  font-weight: bold;
+  color: #f3f0ff;
+  margin-top: 8px;
+}
+
+.cast-role {
+  font-size: 12px;
+  color: #c7d2fe;
+}
+
+@media (max-width: 768px) {
+  .banner-overlay {
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .left .poster {
+    width: 100%;
+    max-width: 240px;
+    margin: 0 auto;
+  }
+
+  .right {
+    min-width: 100%;
+  }
+
+  .right h2 {
+    font-size: 20px;
+  }
+
+  .right h3 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner {
+    padding: 24px 16px;
+  }
+
+  .right h2 {
+    font-size: 18px;
+  }
+
+  .right h3 {
+    font-size: 14px;
+  }
+
+  .cast-card {
+    min-width: 100px;
+  }
+
+  .cast-name {
+    font-size: 12px;
+  }
+
+  .cast-role {
+    font-size: 11px;
+  }
+}
