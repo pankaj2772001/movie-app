@@ -23,10 +23,7 @@ const MovieContent = () => {
   const [searchValue, setSearchValue] = useState("");
   const location = useLocation();
 
-  useEffect(() => {
-    setPage(1);
-  }, [location.pathname, searchValue]);
-
+  
   async function getAllMovies() {
     try {
       const response = await fetch(
@@ -66,7 +63,7 @@ const MovieContent = () => {
     }
   };
 
-  const getSearchMovies = async () => {
+  const getSearchMovies = async (searchValue) => {
     try {
       const response = await fetch(
         `https://api.themoviedb.org/3/search/movie?api_key=c45a857c193f6302f2b5061c3b85e743&language=en-US&query=${searchValue}&page=${page}`
@@ -122,10 +119,16 @@ const MovieContent = () => {
       getTopRatedMovies();
     } else if (location.pathname === "/upcoming") {
       getUpcomingMovies();
-    } else if (location.pathname === "/search" && searchValue.trim()) {
-      getSearchMovies();
-    }
-  }, [page, location.pathname, searchValue]);
+    }  else if (location.pathname === "/search" && searchValue.trim().length > 0) {
+    getSearchMovies(searchValue);
+  }
+  }, [page, location.pathname]);
+
+  useEffect(() => {
+    setPage(1);
+  }, [location.pathname]);  
+  
+
 
   return (
     <MovieProvider.Provider
@@ -145,6 +148,7 @@ const MovieContent = () => {
         castDetail,
         searchValue,
         setSearchValue,
+        setPage
       }}
     >
       <Nav />
