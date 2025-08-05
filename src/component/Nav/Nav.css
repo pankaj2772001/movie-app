@@ -1,106 +1,4 @@
-/* .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #312e81;
-  padding: 12px 24px;
-  border-bottom: 1px solid #4f46e5;
-  font-family: sans-serif;
-  color: #f3f0ff;
-  flex-wrap: wrap;
-}
 
-.navbar-logo {
-  font-size: 1.4rem;
-  font-weight: bold;
-  color: #a78bfa;
-  text-decoration: none;
-}
-
-.navbar-links {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.nav-link {
-  text-decoration: none;
-  color: #f3f0ff;
-  font-size: 0.95rem;
-}
-
-.nav-link.active {
-  font-weight: bold;
-  color: #a78bfa;
-}
-
-.search-container {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: 10px;
-}
-
-.search-input {
-  padding: 6px 8px;
-  border: 1px solid #5b5fc7;
-  border-radius: 4px;
-  background-color: #1e1b60;
-  color: #f3f0ff;
-  font-size: 0.9rem;
-}
-
-.search-button {
-  background-color: #a78bfa;
-  color: #1e1b60;
-  border: none;
-  padding: 6px 12px;
-  font-size: 0.9rem;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.search-button:hover {
-  background-color: #8b5cf6;
-}
-
-@media screen and (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 16px;
-  }
-
-  .navbar-links {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    margin-top: 10px;
-    width: 100%;
-  }
-
-  .search-container {
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    margin-top: 12px;
-  }
-
-  .search-input {
-    width: 100%;
-  }
-
-  .search-button {
-    width: 100%;
-  }
-} */
-
-
-/* === Main Nav Styles === */
-/* === Main Navbar === */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -120,7 +18,7 @@
   text-decoration: none;
 }
 
-/* === Hamburger Icon (hidden by default) === */
+
 .hamburger {
   display: none;
   flex-direction: column;
@@ -136,7 +34,7 @@
   border-radius: 2px;
 }
 
-/* === Navigation Links === */
+
 .navbar-links {
   display: flex;
   align-items: center;
@@ -157,7 +55,7 @@
   color: #a78bfa;
 }
 
-/* === Search Input === */
+
 .search-container {
   display: flex;
   align-items: center;
@@ -188,7 +86,7 @@
   background-color: #8b5cf6;
 }
 
-/* === Responsive (Mobile Only) === */
+
 @media screen and (max-width: 768px) {
   .hamburger {
     display: flex;
